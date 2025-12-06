@@ -1,0 +1,14 @@
+{
+  "workspace": "emotions-dectection",
+  "project": "human-face-emotions",
+  "version": 28,
+  "target_classes": [
+    "happy",
+    "sad"
+  ],
+  "binary_mapping": {
+    "sad": 0,
+    "happy": 1
+  },
+  "confidence_threshold": 40
+}

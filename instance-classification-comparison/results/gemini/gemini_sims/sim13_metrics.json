@@ -1,0 +1,17 @@
+{
+  "simulation": "SIM13",
+  "simulation_number": 13,
+  "model": "Gemini 2.0 Flash",
+  "accuracy": 0.965,
+  "precision": 0.9603960396039604,
+  "recall": 0.97,
+  "f1_score": 0.9651741293532339,
+  "total_images": 200,
+  "valid_predictions": 200,
+  "invalid_predictions": 0,
+  "true_negatives": 96,
+  "false_positives": 4,
+  "false_negatives": 3,
+  "true_positives": 97,
+  "timestamp": "2025-12-04T09:49:56.191167"
+}

@@ -1,0 +1,201 @@
+image_name,true_class,predicted_class,confidence,detected,error
+image-461.jpeg,happy,unknown,0.0,False,Nenhum rosto detectado
+203915405.png,happy,happy,0.8300464749336243,True,
+12442.png,happy,neutral,0.686903178691864,True,
+255791519.png,happy,unknown,0.0,False,Nenhum rosto detectado
+4362.png,happy,happy,0.9456986784934998,True,
+603572653.png,happy,happy,0.7810372114181519,True,
+727253303.png,happy,neutral,0.4965469241142273,True,
+28863985.png,happy,happy,0.9259597659111023,True,
+233811693.png,happy,content,0.5816662907600403,True,
+216806802.png,happy,surprise,0.6663352251052856,True,
+977804456.png,happy,happy,0.955100417137146,True,
+24642.png,happy,happy,0.927733302116394,True,
+21935.png,happy,happy,0.9366012811660767,True,
+6947.png,happy,unknown,0.0,False,Nenhum rosto detectado
+34652.png,happy,unknown,0.0,False,Nenhum rosto detectado
+33385515.png,happy,happy,0.8877862095832825,True,
+44212939.png,happy,happy,0.4276924729347229,True,
+32409.png,happy,happy,0.697937548160553,True,
+514744669.png,happy,disgust,0.6011489629745483,True,
+29773.png,happy,happy,0.6347545385360718,True,
+16795.png,happy,happy,0.905979335308075,True,
+476011617.png,happy,happy,0.8672704696655273,True,
+452738403.png,happy,happy,0.747753381729126,True,
+572538703.png,happy,fear,0.626352071762085,True,
+988637703.png,happy,happy,0.9529695510864258,True,
+11210.png,happy,surprise,0.4284805953502655,True,
+140074902.png,happy,happy,0.9366012811660767,True,
+3144.png,happy,sad,0.6001741290092468,True,
+817091292.png,happy,happy,0.9259694814682007,True,
+11761.png,happy,content,0.8847872018814087,True,
+25413.png,happy,unknown,0.0,False,Nenhum rosto detectado
+4950.png,happy,unknown,0.0,False,Nenhum rosto detectado
+3452.png,happy,happy,0.9496235251426697,True,
+109928862.png,happy,happy,0.8241217136383057,True,
+323417193.png,happy,happy,0.9225675463676453,True,
+33798.png,happy,happy,0.9383353590965271,True,
+4288.png,happy,happy,0.9653900861740112,True,
+183855197.png,happy,content,0.6509335041046143,True,
+101386174.png,happy,neutral,0.6216571927070618,True,
+31413.png,happy,happy,0.6046661138534546,True,
+17403.png,happy,content,0.6402199268341064,True,
+730290052.png,happy,unknown,0.0,False,Nenhum rosto detectado
+16495.png,happy,happy,0.7786256670951843,True,
+7961.png,happy,unknown,0.0,False,Nenhum rosto detectado
+911337396.png,happy,happy,0.6295850276947021,True,
+565445387.png,happy,surprise,0.8531590104103088,True,
+27058.png,happy,happy,0.4018089771270752,True,
+482582408.png,happy,surprise,0.7567423582077026,True,
+475309922.png,happy,happy,0.9553323984146118,True,
+829972466.png,happy,happy,0.9312099814414978,True,
+24752.png,happy,happy,0.8982982039451599,True,
+111.png,happy,unknown,0.0,False,Nenhum rosto detectado
+31363.png,happy,happy,0.9288172721862793,True,
+27040.png,happy,unknown,0.0,False,Nenhum rosto detectado
+29695.png,happy,happy,0.7017474174499512,True,
+446452816.png,happy,fear,0.6496029496192932,True,
+480248076.png,happy,happy,0.8432192802429199,True,
+13655.png,happy,happy,0.6166378259658813,True,
+18714.png,happy,happy,0.9230305552482605,True,
+10229.png,happy,happy,0.9122506976127625,True,
+17208.png,happy,unknown,0.0,False,Nenhum rosto detectado
+16106.png,happy,neutral,0.6362530589103699,True,
+21225.png,happy,neutral,0.4984697103500366,True,
+263888805.png,happy,happy,0.7159115076065063,True,
+525982033.png,happy,happy,0.9272257685661316,True,
+261781880.png,happy,happy,0.8602404594421387,True,
+964991519.png,happy,happy,0.778468132019043,True,
+1499.png,happy,happy,0.7882594466209412,True,
+9416.png,happy,happy,0.8695476651191711,True,
+859227973.png,happy,content,0.48094692826271057,True,
+902197109.png,happy,happy,0.812642514705658,True,
+28798.png,happy,happy,0.9378498792648315,True,
+379166901.png,happy,disgust,0.5177807807922363,True,
+20361857.png,happy,unknown,0.0,False,Nenhum rosto detectado
+266120144.png,happy,happy,0.5129705667495728,True,
+6756.png,happy,surprise,0.7154374122619629,True,
+220.png,happy,content,0.9075317978858948,True,
+9897.png,happy,unknown,0.0,False,Nenhum rosto detectado
+2652.png,happy,happy,0.5738668441772461,True,
+356.png,happy,disgust,0.6653627157211304,True,
+17487.png,happy,unknown,0.0,False,Nenhum rosto detectado
+834185526.png,happy,happy,0.6402899026870728,True,
+20821.png,happy,happy,0.9047038555145264,True,
+13757.png,happy,unknown,0.0,False,Nenhum rosto detectado
+803128383.png,happy,content,0.48858243227005005,True,
+35343.png,happy,surprise,0.9001898765563965,True,
+33726.png,happy,disgust,0.5238335728645325,True,
+676201872.png,happy,happy,0.9259299039840698,True,
+126508027.png,happy,happy,0.7391923069953918,True,
+600921861.png,happy,happy,0.8385076522827148,True,
+443679512.png,happy,fear,0.6897724866867065,True,
+219441545.png,happy,happy,0.8075581789016724,True,
+962782050.png,happy,unknown,0.0,False,Nenhum rosto detectado
+10477.png,happy,happy,0.9215862154960632,True,
+771773773.png,happy,happy,0.9308642148971558,True,
+5273.png,happy,surprise,0.7797980308532715,True,
+8030.png,happy,unknown,0.0,False,Nenhum rosto detectado
+68524777.png,happy,happy,0.6237559914588928,True,
+779159482.png,happy,happy,0.8265939950942993,True,
+22639.png,happy,surprise,0.6105707883834839,True,
+pexels-rdne-9064396.jpg,sad,unknown,0.0,False,Nenhum rosto detectado
+23700.png,sad,disgust,0.4590459167957306,True,
+230609625.png,sad,fear,0.5086127519607544,True,
+541016218.png,sad,anger,0.7821878790855408,True,
+31072.png,sad,content,0.649780809879303,True,
+589818824.png,sad,sad,0.5906456708908081,True,
+364357755.png,sad,neutral,0.6564288139343262,True,
+20793.png,sad,unknown,0.0,False,Nenhum rosto detectado
+607.png,sad,sad,0.9181103706359863,True,
+12694.png,sad,unknown,0.0,False,Nenhum rosto detectado
+375839097.png,sad,neutral,0.48128741979599,True,
+1557.png,sad,sad,0.47131139039993286,True,
+370048816.png,sad,unknown,0.0,False,Nenhum rosto detectado
+507020711.png,sad,sad,0.6997610926628113,True,
+30791.png,sad,unknown,0.0,False,Nenhum rosto detectado
+612398542.png,sad,sad,0.8621383309364319,True,
+751626108.png,sad,neutral,0.6622806787490845,True,
+75781512.png,sad,disgust,0.777526319026947,True,
+3385.png,sad,unknown,0.0,False,Nenhum rosto detectado
+31062843.png,sad,neutral,0.4634205102920532,True,
+494380994.png,sad,sad,0.5186573266983032,True,
+435917226.png,sad,unknown,0.0,False,Nenhum rosto detectado
+784642034.png,sad,unknown,0.0,False,Nenhum rosto detectado
+25059.png,sad,content,0.4730123281478882,True,
+953240873.png,sad,sad,0.677932858467102,True,
+651879586.png,sad,unknown,0.0,False,Nenhum rosto detectado
+849113628.png,sad,unknown,0.0,False,Nenhum rosto detectado
+10962.png,sad,neutral,0.6521940231323242,True,
+959688917.png,sad,neutral,0.6420343518257141,True,
+429710823.png,sad,unknown,0.0,False,Nenhum rosto detectado
+930680132.png,sad,unknown,0.0,False,Nenhum rosto detectado
+95770579.png,sad,sad,0.6398239135742188,True,
+225669538.png,sad,content,0.8449393510818481,True,
+3118.png,sad,sad,0.7927675843238831,True,
+1243.png,sad,unknown,0.0,False,Nenhum rosto detectado
+16913.png,sad,sad,0.7684575319290161,True,
+57660221.png,sad,sad,0.5952121019363403,True,
+7988.png,sad,sad,0.548770546913147,True,
+20469.png,sad,anger,0.6808368563652039,True,
+26959.png,sad,sad,0.8307718634605408,True,
+108928964.png,sad,neutral,0.6584484577178955,True,
+5581.png,sad,unknown,0.0,False,Nenhum rosto detectado
+28961.png,sad,fear,0.4829280972480774,True,
+142186992.png,sad,unknown,0.0,False,Nenhum rosto detectado
+951528920.png,sad,sad,0.7497104406356812,True,
+62660238.png,sad,unknown,0.0,False,Nenhum rosto detectado
+15346.png,sad,disgust,0.43283745646476746,True,
+370624334.png,sad,sad,0.7838733792304993,True,
+317533502.png,sad,unknown,0.0,False,Nenhum rosto detectado
+380351717.png,sad,neutral,0.6985114812850952,True,
+216960245.png,sad,unknown,0.0,False,Nenhum rosto detectado
+505202871.png,sad,disgust,0.4536993205547333,True,
+400310970.png,sad,neutral,0.4459474980831146,True,
+661695118.png,sad,sad,0.7574615478515625,True,
+919705717.png,sad,sad,0.43196195363998413,True,
+751152494.png,sad,unknown,0.0,False,Nenhum rosto detectado
+28211.png,sad,unknown,0.0,False,Nenhum rosto detectado
+4294.png,sad,disgust,0.7969330549240112,True,
+202769731.png,sad,unknown,0.0,False,Nenhum rosto detectado
+744597164.png,sad,unknown,0.0,False,Nenhum rosto detectado
+946725468.png,sad,anger,0.5842447280883789,True,
+304135250.png,sad,neutral,0.6420477032661438,True,
+553581924.png,sad,sad,0.6926423907279968,True,
+32715.png,sad,anger,0.514207124710083,True,
+124961362.png,sad,neutral,0.5975978970527649,True,
+6068.png,sad,sad,0.5328567624092102,True,
+30888684.png,sad,sad,0.7727898359298706,True,
+342180296.png,sad,fear,0.7787060141563416,True,
+83929857.png,sad,anger,0.41147249937057495,True,
+27912.png,sad,sad,0.7769293785095215,True,
+32304.png,sad,neutral,0.7064834237098694,True,
+379671612.png,sad,unknown,0.0,False,Nenhum rosto detectado
+944369610.png,sad,unknown,0.0,False,Nenhum rosto detectado
+679780163.png,sad,sad,0.5619851350784302,True,
+285739162.png,sad,sad,0.4655846655368805,True,
+648046924.png,sad,neutral,0.638914942741394,True,
+6151.png,sad,neutral,0.41171854734420776,True,
+986856085.png,sad,happy,0.8285199999809265,True,
+15640.png,sad,neutral,0.6136983633041382,True,
+846591621.png,sad,sad,0.7792837619781494,True,
+16612.png,sad,neutral,0.6284662485122681,True,
+14561.png,sad,disgust,0.7027509212493896,True,
+367538915.png,sad,neutral,0.513119101524353,True,
+210028354.png,sad,neutral,0.8811469078063965,True,
+828071737.png,sad,neutral,0.6462100744247437,True,
+27784.png,sad,unknown,0.0,False,Nenhum rosto detectado
+21336.png,sad,unknown,0.0,False,Nenhum rosto detectado
+8730198.png,sad,unknown,0.0,False,Nenhum rosto detectado
+7472.png,sad,sad,0.7547741532325745,True,
+191960838.png,sad,unknown,0.0,False,Nenhum rosto detectado
+645068853.png,sad,unknown,0.0,False,Nenhum rosto detectado
+350921929.png,sad,disgust,0.8342153429985046,True,
+790978455.png,sad,unknown,0.0,False,Nenhum rosto detectado
+9517.png,sad,content,0.6903033256530762,True,
+116446635.png,sad,neutral,0.6447043418884277,True,
+29433.png,sad,content,0.8651505708694458,True,
+740395695.png,sad,neutral,0.42489489912986755,True,
+23490.png,sad,sad,0.6303302049636841,True,
+16173.png,sad,unknown,0.0,False,Nenhum rosto detectado
+931163166.png,sad,sad,0.5242522954940796,True,

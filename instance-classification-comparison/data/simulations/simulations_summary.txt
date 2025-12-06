@@ -1,0 +1,132 @@
+RELATÓRIO DE SIMULAÇÕES
+================================================================================
+
+Total de Simulações: 30
+Imagens por classe por simulação: 100
+Total de imagens por simulação: 200
+Total geral: 6000 imagens
+
+--------------------------------------------------------------------------------
+DETALHES POR SIMULAÇÃO:
+--------------------------------------------------------------------------------
+
+SIM01 (seed=43):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM02 (seed=44):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM03 (seed=45):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM04 (seed=46):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM05 (seed=47):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM06 (seed=48):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM07 (seed=49):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM08 (seed=50):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM09 (seed=51):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM10 (seed=52):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM11 (seed=53):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM12 (seed=54):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM13 (seed=55):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM14 (seed=56):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM15 (seed=57):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM16 (seed=58):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM17 (seed=59):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM18 (seed=60):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM19 (seed=61):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM20 (seed=62):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM21 (seed=63):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM22 (seed=64):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM23 (seed=65):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM24 (seed=66):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM25 (seed=67):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM26 (seed=68):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM27 (seed=69):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM28 (seed=70):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM29 (seed=71):
+  happy: 100 imagens
+  sad: 100 imagens
+
+SIM30 (seed=72):
+  happy: 100 imagens
+  sad: 100 imagens
+

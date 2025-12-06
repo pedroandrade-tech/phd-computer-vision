@@ -1,0 +1,17 @@
+{
+  "simulation": "SIM30",
+  "simulation_number": 30,
+  "model": "YOLOv8",
+  "accuracy": 0.9325842696629213,
+  "precision": 0.9047619047619048,
+  "recall": 1.0,
+  "f1_score": 0.95,
+  "total_images": 200,
+  "valid_predictions": 89,
+  "invalid_predictions": 111,
+  "true_negatives": 26,
+  "false_positives": 6,
+  "false_negatives": 0,
+  "true_positives": 57,
+  "timestamp": "2025-12-03T18:21:47.731948"
+}

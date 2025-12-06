@@ -1,0 +1,49 @@
+{
+  "test": "Wilcoxon Signed-Rank Test",
+  "paired": true,
+  "significance_level": 0.05,
+  "num_simulations": 30,
+  "timestamp": "2025-12-04T21:49:11.433572",
+  "results": {
+    "accuracy": {
+      "metric_name": "Acur\u00e1cia",
+      "statistic": 167.0,
+      "p_value": 0.18396909348666668,
+      "is_significant": false,
+      "significance_level": 0.05,
+      "mean_difference": 0.006205649961286179,
+      "yolo_mean": 0.9581979304046448,
+      "gemini_mean": 0.9519922804433583
+    },
+    "precision": {
+      "metric_name": "Precis\u00e3o",
+      "statistic": 195.0,
+      "p_value": 0.4521643426269293,
+      "is_significant": false,
+      "significance_level": 0.05,
+      "mean_difference": 0.002692979197786701,
+      "yolo_mean": 0.9671259980353258,
+      "gemini_mean": 0.9644330188375392
+    },
+    "recall": {
+      "metric_name": "Recall",
+      "statistic": 41.0,
+      "p_value": 1.8244609236717224e-05,
+      "is_significant": true,
+      "significance_level": 0.05,
+      "mean_difference": 0.03068124233290679,
+      "yolo_mean": 0.9693792495839333,
+      "gemini_mean": 0.9386980072510265
+    },
+    "f1_score": {
+      "metric_name": "F1-Score",
+      "statistic": 46.0,
+      "p_value": 3.453157842159271e-05,
+      "is_significant": true,
+      "significance_level": 0.05,
+      "mean_difference": 0.016783379041560912,
+      "yolo_mean": 0.967944564924874,
+      "gemini_mean": 0.951161185883313
+    }
+  }
+}

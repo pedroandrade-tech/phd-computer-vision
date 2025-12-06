@@ -1,0 +1,13 @@
+{
+  "model_name": "Gemini Flash 2.0",
+  "model_id": "gemini-2.0-flash",
+  "target_classes": [
+    "happy",
+    "sad"
+  ],
+  "image_size": [
+    224,
+    224
+  ],
+  "rate_limit": 15
+}
