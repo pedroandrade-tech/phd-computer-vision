@@ -41,3 +41,12 @@ source .venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+```
+
+# Author
+
+**Pedro Fonseca de Andrade** PhD Candidate | Computer Vision Research
+
+# License
+
+This repository is intended for academic and research purposes.
