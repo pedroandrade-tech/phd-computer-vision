@@ -1,260 +1,157 @@
-# 🎯 Instance Classification Comparison
+# Instance Classification Comparison
 
-**PhD Computer Vision Project** - Comparing instance classification models for emotion detection (Happy vs Sad).
+Comparative evaluation of instance classification approaches for binary facial emotion detection (happy vs. sad), using repeated random sampling across 30 independent trials.
 
-## 📋 Overview
+## Overview
 
-This project compares two different approaches for facial emotion classification:
+This project benchmarks two fundamentally different strategies for image-level emotion classification:
 
-| Model | Type | Approach |
-|-------|------|----------|
-| **YOLOv8 + Roboflow** | Specialized Object Detection | Pre-trained on facial emotions |
-| **Gemini Flash** | Multimodal LLM | General-purpose with prompt engineering |
+- **YOLOv8 via Roboflow** — a specialized object detection model fine-tuned on facial emotion data.
+- **Gemini Flash** — a general-purpose multimodal LLM guided through prompt engineering.
 
-### Key Features
+Each model is evaluated over 30 independent trials of 200 randomly sampled images (100 per class), with performance compared through standard classification metrics and non-parametric statistical testing.
 
-- 🔬 **30 Monte Carlo simulations** (200 images each)
-- 📊 **4 metrics**: Accuracy, Precision, Recall, F1-Score
-- 📈 **Statistical comparison**: Wilcoxon Signed-Rank Test (α = 0.05)
-- 📉 **Visualizations**: BoxPlots, Line Charts, Confusion Matrices
-
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 instance-classification-comparison/
-├── config.py                    # Centralized configuration
-├── requirements.txt             # Python dependencies
-├── .env                         # API keys (not in repo)
+├── config.py
+├── requirements.txt
+├── .env
 │
 ├── data/
-│   ├── raw/                     # Original dataset
-│   └── simulations/             # SIM01-SIM30 folders
-│       ├── SIM01/
-│       │   ├── happy/           # 100 images
-│       │   └── sad/             # 100 images
-│       └── ...
+│   ├── raw/
+│   └── simulations/            # SIM01–SIM30
 │
 ├── src/
 │   ├── data/
-│   │   ├── import_data.py       # Download from Kaggle
-│   │   └── data_prep.py         # Create simulations
+│   │   ├── import_data.py
+│   │   └── data_prep.py
 │   │
 │   ├── roboflow_yolo8/
-│   │   ├── 01_config.py         # Environment setup
-│   │   ├── 02_connector.py      # Model connection
-│   │   ├── 03_inference.py      # Single simulation
-│   │   └── 04_batch_processing.py  # All 30 simulations
+│   │   ├── 01_config.py
+│   │   ├── 02_connector.py
+│   │   ├── 03_inference.py
+│   │   └── 04_batch_processing.py
 │   │
 │   ├── gemini/
-│   │   ├── 01_config.py         # Environment setup
-│   │   ├── 02_connector.py      # API connection
-│   │   ├── 03_inference.py      # Single simulation
-│   │   └── 04_batch_processing.py  # All 30 simulations
+│   │   ├── 01_config.py
+│   │   ├── 02_connector.py
+│   │   ├── 03_inference.py
+│   │   └── 04_batch_processing.py
 │   │
 │   └── evaluation/
-│       └── comparison.py        # Statistical comparison
+│       └── comparison.py
 │
 ├── results/
 │   ├── roboflow_yolo8/
-│   │   ├── roboflow_sims/       # Individual results
-│   │   ├── all_metrics.csv      # Consolidated metrics
-│   │   └── summary_statistics.json
-│   │
 │   ├── gemini/
-│   │   ├── gemini_sims/         # Individual results
-│   │   ├── all_metrics.csv      # Consolidated metrics
-│   │   └── summary_statistics.json
-│   │
 │   └── comparison/
-│       ├── boxplot_*.png        # BoxPlot visualizations
-│       ├── line_*.png           # Line charts
-│       ├── wilcoxon_test_results.json
-│       └── comparison_report.txt
 │
 └── models/
     ├── roboflow_yolo8/
-    │   └── roboflow_config.json
     └── gemini_flash/
-        └── gemini_config.json
 ```
 
-## 🚀 Quick Start
+## Setup
 
-### 1. Clone the repository
+### Requirements
+
+- Python 3.10+
+- API keys for Roboflow, Google Gemini, and optionally Kaggle
+
+### Installation
 
 ```bash
 git clone https://github.com/yourusername/instance-classification-comparison.git
 cd instance-classification-comparison
-```
 
-### 2. Create virtual environment
-
-```bash
 python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
-# or
-.venv\Scripts\activate     # Windows
-```
+source .venv/bin/activate   # Linux/Mac
+# .venv\Scripts\activate    # Windows
 
-### 3. Install dependencies
-
-```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure API keys
+### Environment Variables
 
-Create a `.env` file in the project root:
+Create a `.env` file at the project root:
 
-```env
-# Roboflow API Key
-# Get yours at: https://app.roboflow.com/settings/api
-ROBOFLOW_API_KEY=your_roboflow_api_key_here
-
-# Google Gemini API Key
-# Get yours at: https://aistudio.google.com/app/apikey
-GEMINI_API_KEY=your_gemini_api_key_here
-
-# Kaggle (optional - for dataset download)
-KAGGLE_USERNAME=your_kaggle_username
-KAGGLE_KEY=your_kaggle_key
+```
+ROBOFLOW_API_KEY=your_key
+GEMINI_API_KEY=your_key
+KAGGLE_USERNAME=your_username
+KAGGLE_KEY=your_key
 ```
 
-### 5. Download and prepare data
+### Data Preparation
 
 ```bash
-# Download dataset from Kaggle
-python src/data/import_data.py
-
-# Create 30 simulations
-python src/data/data_prep.py
+python src/data/import_data.py    # download dataset from Kaggle
+python src/data/data_prep.py      # generate 30 simulation splits
 ```
 
-## 📊 Running the Pipelines
+## Usage
 
-### YOLOv8 + Roboflow Pipeline
+### YOLOv8 + Roboflow
 
 ```bash
-# 1. Verify environment
 python src/roboflow_yolo8/01_config.py
-
-# 2. Connect and test model
 python src/roboflow_yolo8/02_connector.py
-
-# 3. Process single simulation (SIM01)
-python src/roboflow_yolo8/03_inference.py
-
-# 4. Process all 30 simulations
-python src/roboflow_yolo8/04_batch_processing.py
+python src/roboflow_yolo8/03_inference.py         # single trial
+python src/roboflow_yolo8/04_batch_processing.py  # all 30 trials
 ```
 
-### Gemini Flash Pipeline
+### Gemini Flash
 
 ```bash
-# 1. Verify environment
 python src/gemini/01_config.py
-
-# 2. Connect and test API
 python src/gemini/02_connector.py
-
-# 3. Process single simulation (~13-15 min)
-python src/gemini/03_inference.py
-
-# 4. Process all 30 simulations (~6-8 hours)
-python src/gemini/04_batch_processing.py
+python src/gemini/03_inference.py                 # single trial (~13 min)
+python src/gemini/04_batch_processing.py          # all 30 trials (~6–8 h)
 ```
 
-### Compare Models
+> Gemini's free tier is limited to 15 requests/min, which is the main bottleneck for batch processing.
+
+### Evaluation
 
 ```bash
 python src/evaluation/comparison.py
 ```
 
-## ⏱️ Estimated Processing Times
+## Methodology
 
-| Task | YOLOv8 | Gemini |
-|------|--------|--------|
-| Single simulation (200 images) | ~2 min | ~13-15 min |
-| All 30 simulations | ~60 min | ~6-8 hours |
+Each of the 30 trials uses a balanced random sample of 200 images (100 happy, 100 sad) drawn from the full dataset. Both models are evaluated on the same splits to ensure a fair paired comparison.
 
-> **Note**: Gemini has a rate limit of 15 requests/minute on the free tier.
+**Metrics:** Accuracy, Precision, Recall, F1-Score.
 
-## 📈 Output Examples
+**Statistical testing:** Wilcoxon Signed-Rank Test (alpha = 0.05) applied to each metric across the 30 paired observations.
 
-### Metrics CSV Format
+**Visualizations:** box plots, line charts across trials, and confusion matrices.
 
-```csv
-simulation_number,simulation,accuracy,precision,recall,f1_score,total_images,valid_predictions
-1,SIM01,0.8950,0.9100,0.8800,0.8947,200,200
-2,SIM02,0.9050,0.9000,0.9100,0.9050,200,200
-...
-```
+## Estimated Processing Time
 
-### Wilcoxon Test Results
+| Scope | YOLOv8 | Gemini |
+|-------|--------|--------|
+| 1 trial (200 images) | ~2 min | ~13–15 min |
+| 30 trials | ~60 min | ~6–8 h |
 
-```json
-{
-  "test": "Wilcoxon Signed-Rank Test",
-  "significance_level": 0.05,
-  "results": {
-    "accuracy": {
-      "p_value": 0.0023,
-      "is_significant": true,
-      "mean_difference": 0.0450
-    }
-  }
-}
-```
+## Configuration
 
-## 🔧 Configuration
-
-All paths and constants are centralized in `config.py`:
+All paths, class labels, and experiment parameters are centralized in `config.py`:
 
 ```python
-from config import (
-    PATHS,              # All project paths
-    CLASSES,            # ['happy', 'sad']
-    NUM_SIMULATIONS,    # 30
-    IMAGES_PER_CLASS,   # 100
-    ROBOFLOW_API_KEY,   # From .env
-    GEMINI_API_KEY,     # From .env
-)
+from config import PATHS, CLASSES, NUM_SIMULATIONS, IMAGES_PER_CLASS
 ```
 
-## 📝 Interactive Menus
+## Tech Stack
 
-All scripts have interactive menus with verification options:
+Python, YOLOv8 (Ultralytics), Roboflow API, Google Gemini API, pandas, NumPy, scikit-learn, Matplotlib, Seaborn, SciPy.
 
-```
-📋 OPTIONS:
-   1. Execute full process
-   2. Verify existing results only
-   3. Cancel
+## License
 
-❓ Choose an option (1/2/3):
-```
+This project is part of ongoing PhD research. If you use or reference it, please cite appropriately.
 
-## 🛠️ Tech Stack
+## Author
 
-- **Python** 3.10+
-- **YOLOv8** (Ultralytics)
-- **Roboflow** API
-- **Google Gemini** API
-- **Pandas** / **NumPy** - Data processing
-- **Scikit-learn** - Metrics calculation
-- **Matplotlib** / **Seaborn** - Visualizations
-- **SciPy** - Statistical tests
-
-## 📄 License
-
-This project is part of a PhD research. Please cite appropriately if used.
-
-## 👤 Author
-
-**Pedro Fonseca de Andrade**
-
-PhD Candidate - Computer Vision Research
-
----
-
-⭐ If this project helped you, please give it a star!
+Pedro Fonseca de Andrade
