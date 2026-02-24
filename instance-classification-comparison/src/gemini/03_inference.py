@@ -19,18 +19,47 @@ from config import (
     CLASS_MAPPING,
     GEMINI_API_KEY,
     GEMINI_DELAY,
-    GEMINI_RESULTS_DIR,
     GEMINI_SIMS_DIR,
     IMAGES_PER_CLASS,
     get_simulation_path,
 )
 
-# Reuse classifier from 02_connector
-from importlib import import_module
-_connector = import_module("02_connector")
-GeminiClassifier = _connector.GeminiClassifier
-
 log = logging.getLogger(__name__)
+
+PROMPT = (
+    "Look at this face carefully. "
+    "Classify the emotion as either 'Happy' or 'Sad'. "
+    "Answer with ONLY ONE WORD: either 'Happy' or 'Sad'. "
+    "Do not add any explanation."
+)
+
+
+class GeminiClassifier:
+    """Emotion classifier backed by Google Gemini (multimodal)."""
+
+    def __init__(self, api_key: str, model_id: str = "gemini-2.0-flash"):
+        import google.generativeai as genai
+        self._pil = __import__("PIL.Image", fromlist=["Image"])
+        genai.configure(api_key=api_key)
+        self.model = genai.GenerativeModel(model_id)
+        self.model_id = model_id
+
+    def predict(self, image_path: str) -> dict:
+        try:
+            img = self._pil.open(image_path).resize((224, 224), self._pil.LANCZOS)
+            response = self.model.generate_content([PROMPT, img])
+            if not response.text:
+                return {"predicted_class": None, "detected": False, "error": "empty response", "raw_response": None}
+            text = response.text.strip().lower()
+            if "happy" in text and "sad" not in text:
+                cls = "happy"
+            elif "sad" in text and "happy" not in text:
+                cls = "sad"
+            else:
+                return {"predicted_class": None, "detected": False, "error": f"ambiguous: {text}", "raw_response": text}
+            return {"predicted_class": cls, "detected": True, "error": None, "raw_response": text}
+        except Exception as e:
+            return {"predicted_class": None, "detected": False, "error": str(e), "raw_response": None}
 
 
 def process_simulation(classifier: GeminiClassifier, sim_number: int) -> tuple[pd.DataFrame, float]:
