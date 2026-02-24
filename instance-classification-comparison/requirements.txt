@@ -1,6 +1,5 @@
 # Instance Classification Comparison
 # PhD Computer Vision Project
-# =============================
 
 # Core ML/DL
 ultralytics>=8.2.0
