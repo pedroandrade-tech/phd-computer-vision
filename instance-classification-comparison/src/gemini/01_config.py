@@ -14,9 +14,7 @@ from config import (
     GEMINI_MODEL_DIR,
     GEMINI_REQUESTS_PER_MINUTE,
     GEMINI_SIMS_DIR,
-    IMAGES_PER_CLASS,
     NUM_SIMULATIONS,
-    SIMULATIONS_DIR,
     get_simulation_path,
 )
 

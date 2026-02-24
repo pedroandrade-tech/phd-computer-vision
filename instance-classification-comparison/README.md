@@ -141,7 +141,7 @@ Each of the 30 trials uses a balanced random sample of 200 images (100 happy, 10
 All paths, class labels, and experiment parameters are centralized in `config.py`:
 
 ```python
-from config import PATHS, CLASSES, NUM_SIMULATIONS, IMAGES_PER_CLASS
+from config import CLASSES, NUM_SIMULATIONS, IMAGES_PER_CLASS, GEMINI_RESULTS_DIR
 ```
 
 ## Tech Stack
