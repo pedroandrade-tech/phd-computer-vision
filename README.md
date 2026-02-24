@@ -1,56 +1,43 @@
-# 🎓 PhD Computer Vision
+# PhD Computer Vision
 
-Practical implementations of Computer Vision techniques learned during my PhD studies.
+Practical implementations of Computer Vision techniques developed during my PhD studies.
 
-## 📚 About
+## Overview
 
-This repository contains hands-on projects applying concepts, algorithms, and methodologies from my PhD coursework in Computer Vision. Each project focuses on a specific technique or research question.
+This repository contains applied projects exploring concepts, algorithms, and methodologies from my PhD research in Computer Vision. Each project is contained within its own directory and focuses on a specific technique or research question.
 
-## 🗂️ Projects
+## Projects
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| [instance-classification-comparison](./instance-classification-comparison/) | Comparing YOLOv8 vs Gemini Flash for facial emotion detection (Happy/Sad) using Monte Carlo simulations and Wilcoxon statistical tests | ✅ Complete |
-| *More coming soon...* | | 🔜 |
+| [instance-classification-comparison](./instance-classification-comparison/) | Comparison of YOLOv8 and Gemini Flash for facial emotion detection (Happy/Sad) utilizing Monte Carlo simulations and Wilcoxon statistical tests. | Complete |
+| *Future projects will be listed here.* | | |
 
-## 🛠️ Tech Stack
+## Technologies & Tools
 
-- **Python** 3.10+
-- **Deep Learning**: YOLOv8, Ultralytics
-- **LLMs**: Google Gemini
-- **ML Platforms**: Roboflow
-- **Data Science**: Pandas, NumPy, Scikit-learn
-- **Visualization**: Matplotlib, Seaborn
-- **Statistics**: SciPy
+- **Programming Language:** Python 3.10+
+- **Deep Learning:** YOLOv8, Ultralytics
+- **Large Language Models (LLMs):** Google Gemini
+- **Machine Learning Platforms:** Roboflow
+- **Data Science & Statistics:** Pandas, NumPy, Scikit-learn, SciPy
+- **Visualization:** Matplotlib, Seaborn
 
-## 🚀 Getting Started
+## Getting Started
 
-Each project has its own `README.md` with specific instructions. General setup:
+Each project directory contains a dedicated `README.md` with specific setup, execution instructions, and methodology details. 
+
+To set up the general environment:
 
 ```bash
 # Clone the repository
-git clone https://github.com/pedroandrade-tech/phd-computer-vision.git
+git clone [https://github.com/pedroandrade-tech/phd-computer-vision.git](https://github.com/pedroandrade-tech/phd-computer-vision.git)
 
-# Navigate to a project
+# Navigate to a specific project
 cd phd-computer-vision/instance-classification-comparison
 
-# Create virtual environment
+# Create and activate a virtual environment (Linux/macOS)
 python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
+source .venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-```
-
-## 👤 Author
-
-**Pedro Fonseca de Andrade**  
-PhD Candidate | Computer Vision Research
-
-## 📄 License
-
-This repository is for academic and research purposes.
-
----
-
-⭐ Feel free to explore and learn!
