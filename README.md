@@ -10,7 +10,7 @@ This repository contains applied projects exploring concepts, algorithms, and me
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| [instance-classification-comparison](./instance-classification-comparison/) | Comparison of YOLOv8 and Gemini Flash for facial emotion detection (Happy/Sad) utilizing Monte Carlo simulations and Wilcoxon statistical tests. | Complete |
+| [instance-classification-comparison](./instance-classification-comparison/) | Comparison of YOLOv8 and Gemini Flash for facial emotion detection (Happy/Sad) utilizing Wilcoxon statistical tests. | Complete |
 | *Future projects will be listed here.* | | |
 
 ## Technologies & Tools
