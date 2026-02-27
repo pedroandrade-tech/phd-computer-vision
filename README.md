@@ -2,51 +2,37 @@
 
 Practical implementations of Computer Vision techniques developed during my PhD studies.
 
-## Overview
-
-This repository contains applied projects exploring concepts, algorithms, and methodologies from my PhD research in Computer Vision. Each project is contained within its own directory and focuses on a specific technique or research question.
-
 ## Projects
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| [instance-classification-comparison](./instance-classification-comparison/) | Comparison of YOLOv8 and Gemini Flash for facial emotion detection (Happy/Sad) utilizing Wilcoxon statistical tests. | Complete |
-| *Future projects will be listed here.* | | |
+| [instance-classification-comparison](./instance-classification-comparison/) | Comparison of YOLOv8 and Gemini Flash for facial emotion detection using Wilcoxon statistical tests | Complete |
+| [amazon-deforestation-detection](./amazon-deforestation-detection/) | U-Net semantic segmentation of deforested areas in Amazon rainforest using Sentinel-2 imagery | Complete |
 
-## Technologies & Tools
+## Technologies
 
-- **Programming Language:** Python 3.10+
-- **Deep Learning:** YOLOv8, Ultralytics
-- **Large Language Models (LLMs):** Google Gemini
-- **Machine Learning Platforms:** Roboflow
-- **Data Science & Statistics:** Pandas, NumPy, Scikit-learn, SciPy
+- **Deep Learning:** PyTorch, YOLOv8, segmentation-models-pytorch
+- **Remote Sensing:** Sentinel-2, rioxarray, GDAL
+- **LLMs:** Google Gemini
+- **ML Platforms:** Roboflow
+- **Data Science:** Pandas, NumPy, Scikit-learn, SciPy
 - **Visualization:** Matplotlib, Seaborn
 
 ## Getting Started
 
-Each project directory contains a dedicated `README.md` with specific setup, execution instructions, and methodology details. 
-
-To set up the general environment:
+Each project directory contains a dedicated README with setup and execution instructions.
 
 ```bash
-# Clone the repository
-git clone [https://github.com/pedroandrade-tech/phd-computer-vision.git](https://github.com/pedroandrade-tech/phd-computer-vision.git)
-
-# Navigate to a specific project
-cd phd-computer-vision/instance-classification-comparison
-
-# Create and activate a virtual environment (Linux/macOS)
-python -m venv .venv
-source .venv/bin/activate
-
-# Install dependencies
+git clone https://github.com/pedroandrade-tech/phd-computer-vision.git
+cd phd-computer-vision/<project-name>
 pip install -r requirements.txt
 ```
 
-# Author
+## Author
 
-**Pedro Fonseca de Andrade** PhD Candidate | Computer Vision Research
+**Pedro Fonseca de Andrade**  
+PhD Candidate | Computer Vision Research
 
-# License
+## License
 
 This repository is intended for academic and research purposes.
