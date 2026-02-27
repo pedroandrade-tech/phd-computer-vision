@@ -31,5 +31,5 @@ jupyter notebook deforestation_detection.ipynb
 ```
 ├── deforestation_detection.ipynb
 ├── requirements.txt
-└── assets/results.png
+
 ```
