@@ -7,11 +7,12 @@ Practical implementations of Computer Vision techniques developed during my PhD 
 | Project | Description | Status |
 |---------|-------------|--------|
 | [instance-classification-comparison](./instance-classification-comparison/) | Comparison of YOLOv8 and Gemini Flash for facial emotion detection using Wilcoxon statistical tests | Complete |
-| [amazon-deforestation-detection](./amazon-deforestation-detection/) | U-Net semantic segmentation of deforested areas in Amazon rainforest using Sentinel-2 imagery | Complete |
+| [amazon-deforestation-detection](./amazon-deforestation-detection/) | Semantic segmentation of deforested areas comparing CNN (ResNet34) and ViT (MiT-B2) encoders using Sentinel-2 imagery | Complete |
 
 ## Technologies
 
 - **Deep Learning:** PyTorch, YOLOv8, segmentation-models-pytorch
+- **Architectures:** U-Net, Vision Transformer (ViT), ResNet
 - **Remote Sensing:** Sentinel-2, rioxarray, GDAL
 - **LLMs:** Google Gemini
 - **ML Platforms:** Roboflow
